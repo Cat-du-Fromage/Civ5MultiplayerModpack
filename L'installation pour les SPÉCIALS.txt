@@ -1,0 +1,11 @@
+POUR VP
+
+MP_UBERALLES_XXX + UI_bc1 + VPUI :
+D:\Programmes\SteamApplication\steamapps\common\Sid Meier's Civilization V\Assets\DLC
+
+
+
+POUR LES MAPS
+
+Continental_Drift_text_en_us.xml          : ...\Documents\My Games\Sid Meier's Civilization 5\Text
+Continental_Drift.lua + Communitu_79a.lua : ...\SteamApplication\steamapps\common\Sid Meier's Civilization V\Assets\Maps

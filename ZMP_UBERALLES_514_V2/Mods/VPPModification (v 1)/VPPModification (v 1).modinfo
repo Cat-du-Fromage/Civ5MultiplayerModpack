@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e757b914-5065-4c72-abf8-cad4f1b8d13c" version="1">
+  <Properties>
+    <Name>VPPModification</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>quelques ajustements</Teaser>
+    <Description>quelques ajustements</Description>
+    <Authors>Florian</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+	<LoadOrder>-75</LoadOrder>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+	<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="7CAB2D49B6D6FF6F416D3B2CD5761AFE" import="0">Changement.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Changement.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/5/2019 1:31:21 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_TEST_BUTTON_NOAUTO_TT_DESAUTO">
+			<Text>Take controle of the city, are you crazy?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TEST_BUTTON_NOAUTO_DESAUTO">
+			<Text>Take control</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

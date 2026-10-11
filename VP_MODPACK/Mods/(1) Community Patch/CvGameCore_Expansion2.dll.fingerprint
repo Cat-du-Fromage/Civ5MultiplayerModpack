@@ -1,0 +1,10 @@
+fingerprint v3
+installer 0.1.6
+source git-tree:f38d07b01d16f80cf8195ea28dcf5cec07d33523
+label Release-5.4.7
+configuration release
+forty-three-civs off
+dll shipped
+toolchain clang-18.1.8+i386-pc-windows-msvc+winsdk-7.0+layout-1
+flags none
+dll fnv1a64:bcd31762635a1457

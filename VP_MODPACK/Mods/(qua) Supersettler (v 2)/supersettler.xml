@@ -1,0 +1,69 @@
+<GameData>
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SUPERSETTLER</Type>
+			<Description>TXT_KEY_UNIT_SETTLER</Description>
+			<DefaultUnit>UNIT_SUPERSETTLER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SUPERSETTLER</Class>
+			<Type>UNIT_SUPERSETTLER</Type>
+			<Moves>2</Moves>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<HurryCostModifier>20</HurryCostModifier>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SETTLER</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SETTLER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
+			<Food>true</Food>
+			<Found>true</Found>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PrereqTech>TECH_FUTURE_TECH</PrereqTech>
+			<Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+			<CombatClass>UNITCOMBAT_SETTLER</CombatClass>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SUPERSETTLER</UnitType>
+			<UnitAIType>UNITAI_SETTLE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+    <Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_SUPERSETTLER</UnitType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+	</Unit_Flavors>
+
+	<Unit_FreePromotions>
+        <Row>
+            <UnitType>UNIT_SUPERSETTLER</UnitType>
+            <PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+        </Row>
+        <Row>
+            <UnitType>UNIT_SUPERSETTLER</UnitType>
+            <PromotionType>PROMOTION_AIR_RECON</PromotionType>
+        </Row>
+    </Unit_FreePromotions>
+
+    <Civilization_FreeUnits>
+        <Update>
+            <Set UnitClassType="UNITCLASS_SUPERSETTLER"/>
+            <Where UnitClassType="UNITCLASS_SETTLER"/>
+        </Update>
+    </Civilization_FreeUnits>
+</GameData>

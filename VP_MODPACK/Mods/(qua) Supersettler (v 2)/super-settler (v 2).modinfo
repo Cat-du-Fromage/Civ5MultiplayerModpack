@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="60e56625-b5b8-478d-b0eb-5fdb9f8e7301" version="2">
+  <Properties>
+    <Name>(qua) Supersettler</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>based on convenientstart v2</Teaser>
+    <Description>based on convenientstart v2</Description>
+    <Authors>seroperson</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="113" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="16" maxversion="999" title="(2) Vox Populi" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="9B7459EF49C13ED29559166AF9CF24C8" import="0">supersettler.sql</File>
+    <File md5="CF23726C2724E87BA71627F015A8A1AE" import="0">supersettler.xml</File>
+    <File md5="FF17755AEB3742F1C59A915D8245E179" import="0">supersettler.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>supersettler.xml</UpdateDatabase>
+      <UpdateDatabase>supersettler.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="supersettler.lua">
+      <Name>supersettler</Name>
+      <Description>supersettler</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

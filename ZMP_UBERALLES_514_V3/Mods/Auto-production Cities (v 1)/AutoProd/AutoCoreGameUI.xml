@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/6/2019 4:08:35 PM -->
+<Context>
+		<GridButton ID="AutoCity" Size="280,40" Anchor="C,B" Offset="40,10" Style="BaseButton" ToolTip="TXT_KEY_TEST_BUTTON_AUTO_TT">
+			<Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_TEST_BUTTON_AUTO" Font="TwCenMT24" FontStyle="Shadow" ColorSet="Beige_Black_Alpha"/>
+		</GridButton>
+	<Instance Name="DiegoInstance">
+	<Stack ID="NotificationStack" Offset="0,30" Anchor="C,T" Size="0,0" StackGrowth="Bottom" Padding="3" Hidden="0">
+		<Label ID="DIEGOIcon"    Anchor="C,C" Offset="0,0" String="[ICON_FLOWER]"      Hidden="1"/>
+	</Stack>
+	</Instance>
+</Context>

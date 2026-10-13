@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d1dce635-ab65-4339-bfaa-c2e709004cd2" version="2">
+  <Properties>
+    <Name>UI - Blank Researched Techs for VP</Name>
+    <Teaser>Hides icons on researched techs to cut tech tree memory use</Teaser>
+    <Description>Blanks out already-researched technologies in the tech tree: their portrait and their small unlock icons are not drawn, and the card collapses back to its normal height.
+
+Civ5 is a 32-bit executable and is capped at roughly 4 GB. The tech tree screen is one of the heaviest UI screens in the game, and "crash to desktop when opening the tech tree" is a report that goes back years. From the Industrial era onwards most of the tree is already researched, so those icons cost memory and draw calls for information you no longer need.
+
+Requires (3a) VP - EUI Compatibility Files - it replaces that mod's ImprovedTechTree/TechTree.lua and must load after it.
+
+UI only. Does not touch the gamecore, the database or the save format.
+
+I have not measured the memory saving and cannot promise it fixes anyone's crashes. It just draws a lot less.
+
+The same behaviour ships in the VoxPopuli Modpacks. I don't know who originally wrote it there; if that's you, say so and I'll credit you. This is an independent implementation - same idea, not the same code.</Description>
+    <Authors>Tech tree screen by bc1, updated for VP/EUI by psparky</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://forums.civfanatics.com/forums/community-patch-project.497/</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+	<Dependencies>
+		<Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" title="(1) Community Patch" />
+		<Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" title="(2) Vox Populi" />
+		<Mod id="24923240-e4fb-4bf6-8f0e-6e5b6cf4d3c2" title="(3a) VP - EUI Compatibility Files" />
+	</Dependencies>
+  <References />
+  <Blocks>
+    <Mod id="e5cc542a-1580-4ca1-b44f-c29c985cf990" minversion="0" maxversion="999" title="(UI) Improved TechTree Screen for VP/EUI" />
+  </Blocks>
+  <Files>
+    <File md5="979C9F8E9D22A26BAC8BF528A06F7346" import="1">ImprovedTechTree/TechTree.lua</File>
+  </Files>
+  <Actions />
+  <EntryPoints />
+</Mod>
